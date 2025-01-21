@@ -8,6 +8,9 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+hr{
+    display: none;
+}
 
 .menu-icon {
     display: none;
@@ -154,7 +157,7 @@ li a {
     padding: 50px 40px;
     border-radius: 20px;
     box-shadow: 0 0 28px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to bottom, #DEF5FF, white);
+    background-image: linear-gradient(to bottom, #DEF5FF,#FFFFFF);
 }
 
 .kinder a {
@@ -184,7 +187,7 @@ li a {
     padding: 50px 40px;
     border-radius: 20px;
     box-shadow: 0 0 28px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to bottom, rgba(238, 225, 255, 1), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(180deg, rgba(238, 225, 255, 1), rgba(255, 255, 255, 0));
 }
 
 .middle a {
@@ -210,6 +213,108 @@ li a {
     color: #F0AA00;
 }
 
+/* stories section style */
+.story{
+    background-image: linear-gradient(to top, rgba(255, 244, 220, 1), rgba(255, 255, 255, 0)),
+
+    url(assets/bg.png);
+  
+    
+}
+.stories-section{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.story-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.story-title{
+    text-align: center;
+    margin: 60px 0;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #000000;
+}
+.story-card-1 img{
+    border-radius: 10px;
+}
+.story-card-1{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.story-card-1 h3{
+    padding: 45px 38px;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.story-card-1  p{
+    padding: 0px 38px;
+    font-size: 1rem;
+    color: #666666;
+   padding-bottom: 50px;
+}
+.sty-btn{
+    margin-top: -30px;
+}
+.crd-1-btn{
+    padding: 10px 25px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #3CD8E8;
+    border-radius: 47px;
+    border: none;
+    margin-left: 38px;
+}
+.story-card-2{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.story-card-2 img{
+    border-radius: 10px;
+}
+.story-card-2 h3{
+    padding: 20px 38px;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #000000;
+}
+.stry-2-btn{
+    padding: 8px 16px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    background-color: #95B226;
+    border: none;
+    border-radius: 45px;
+}
+.child-btn{
+    margin-left: 38px;
+    margin-top: -25px;
+}
+.btn-bg{
+    background-color: #5D58F0;
+}
+.view-all-btn{
+    padding: 80px 0 ;
+    text-align: center;
+}
+.view-btn{
+    padding: 8px 40px;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+
 /* resonsive style */
 
 @media screen and (max-width:576px) {
@@ -218,8 +323,11 @@ li a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 30px;
-        border-bottom: 1px solid rgba(254, 163, 1, 1);
+        /* border-bottom: 1px solid rgba(254, 163, 1, 1); */
+    }
+    hr{
+        display: block;
+        border: 1px solid #F0AA00;
     }
 
     .logo-title {
@@ -284,5 +392,49 @@ li a {
 
         display: none;
 
+    }
+    
+    .stories-section{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .story-card-2 img{
+        width: 100%;
+        height: 108px;
+    }
+    .story-card-2{
+        width: 100%;
+    }
+    .story-container{
+       
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+    .story-card-1{
+        display: none;
+    }
+    .stry-2-btn{
+        padding: 4px 8px;
+        color: #FFFFFF;
+        font-size: .5rem;
+        background-color: #95B226;
+        border: none;
+        border-radius: 45px;
+    }
+    .btn-bg{
+        background-color: #5D58F0;
+    }
+    .child-btn{
+        margin-left: 18px;
+        margin-top: -15px;
+    }
+    .story-card-2 h3{
+        padding: 20px 18px;
+        font-size: .8rem;
+        font-weight: bold;
+        color: #000000;
     }
 }
