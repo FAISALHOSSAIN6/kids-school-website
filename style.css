@@ -250,7 +250,8 @@ li a {
 }
 
 .story-card-1 img {
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .story-card-1 {
@@ -293,7 +294,8 @@ li a {
 }
 
 .story-card-2 img {
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .story-card-2 h3 {
