@@ -218,7 +218,7 @@ li a {
 
 /* stories section style */
 .story {
-    background-image: linear-gradient(to top, rgba(255, 244, 220, 1), rgba(255, 255, 255, 0)),
+    background-image: linear-gradient(to top, rgba(255, 244, 220, .8), rgba(255, 255, 255, 0)),
 
         url(assets/bg.png);
     background-size: 100%;
